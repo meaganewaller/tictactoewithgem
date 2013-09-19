@@ -1,7 +1,9 @@
 #!/usr/bin/env ruby
 
-$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-
 require 'game'
+$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+require 'console_ui'
+
 game = Game.new
-game.play
+game.play(ConsoleUI)
+

@@ -39,7 +39,7 @@ GEM
     rspec-mocks (2.14.3)
     slop (3.4.6)
     thor (0.18.1)
-    ttt_gem_8thlight (0.0.0)
+    ttt_gem_8thlight (0.0.1)
 
 PLATFORMS
   ruby
