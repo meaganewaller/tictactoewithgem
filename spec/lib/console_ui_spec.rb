@@ -8,4 +8,11 @@ describe UI do
     described_class.print_board(board)
     board.spaces.should be_true
   end
+
+  context "ending the game" do
+    it "has a winner - X" do
+      described_class.display_result("X")
+      described_class.messages[:message].should == "The Winner is X"
+    end
+  end
 end
