@@ -11,6 +11,8 @@ class UI
   def self.display_result(result)
     if result == "X" || result == "O"
       messages[:message] = "The Winner is #{result}"
+    else
+      messages[:message] = "The game is a #{result}"
     end
   end
 

@@ -19,5 +19,10 @@ describe UI do
       described_class.display_result("O")
       described_class.messages[:message].should == "The Winner is O"
     end
+
+    it "is a tie" do
+      described_class.display_result("tie")
+      described_class.messages[:message].should == "The game is a tie"
+    end
   end
 end
